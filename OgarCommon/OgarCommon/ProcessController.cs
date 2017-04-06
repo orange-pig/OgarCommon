@@ -31,6 +31,7 @@ namespace OgarCommon
                         return item;
                     }
 
+                    // Next code do work on you include this class in you application project.
                     if (Assembly.GetExecutingAssembly().Location.Replace("/", "\\")
                         == current.MainModule.FileName)
                     {
