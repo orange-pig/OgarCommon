@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace OgarCommon
+namespace OgarCommon.Cryption
 {
     /// <summary>
     /// 加密相关的帮助类

@@ -1,6 +1,6 @@
 using System;
 
-namespace OgarCommon
+namespace OgarCommon.Cryption
 {
     /// <summary>Computes the Adler-32 hash for the input data using the managed library.</summary>
     public class Adler32Helper

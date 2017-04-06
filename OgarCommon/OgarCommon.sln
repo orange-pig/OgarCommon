@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.DB", "OgarCommon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.Device.UsbCamera", "OgarCommon.Device.UsbCamera\OgarCommon.Device.UsbCamera.csproj", "{BB3B8E2C-F8C9-4F9C-83C9-45CB9E210FDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.Cryption", "OgarCommon.Cryption\OgarCommon.Cryption.csproj", "{DAB7C77B-3182-496E-84E7-04464F4AF03D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BB3B8E2C-F8C9-4F9C-83C9-45CB9E210FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB3B8E2C-F8C9-4F9C-83C9-45CB9E210FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB3B8E2C-F8C9-4F9C-83C9-45CB9E210FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB7C77B-3182-496E-84E7-04464F4AF03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB7C77B-3182-496E-84E7-04464F4AF03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB7C77B-3182-496E-84E7-04464F4AF03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB7C77B-3182-496E-84E7-04464F4AF03D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
