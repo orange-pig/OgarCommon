@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.Device.UsbCamera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.Cryption", "OgarCommon.Cryption\OgarCommon.Cryption.csproj", "{DAB7C77B-3182-496E-84E7-04464F4AF03D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OagrCommon.WPF.ExtentionToolkits", "OagrCommon.WPF.ExtentionToolkits\OagrCommon.WPF.ExtentionToolkits.csproj", "{32625E62-6545-4631-85E1-C223D964FB5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.WPF.ExtensionToolkits", "OagrCommon.WPF.ExtentionToolkits\OgarCommon.WPF.ExtensionToolkits.csproj", "{32625E62-6545-4631-85E1-C223D964FB5C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.WPF.LokTarMarkup", "OgarCommon.WPF.LokTarMarkup\OgarCommon.WPF.LokTarMarkup.csproj", "{39171122-200D-426C-BFFB-3462E60106BE}"
 EndProject
