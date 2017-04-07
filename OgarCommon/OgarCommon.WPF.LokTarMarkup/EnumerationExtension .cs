@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Markup;
 
-namespace OagrCommon.WPF.ExtentionToolkits
+namespace OagrCommon.WPF.LokTarMarkup
 {
     public class EnumerationExtension : MarkupExtension
     {
@@ -44,6 +44,10 @@ namespace OagrCommon.WPF.ExtentionToolkits
                 throw new ArgumentNullException("enumType");
 
             EnumType = enumType;
+        }
+
+        protected EnumerationExtension()
+        {
         }
 
         public override object ProvideValue(IServiceProvider serviceProvider)

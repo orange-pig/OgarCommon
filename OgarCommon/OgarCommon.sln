@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.Cryption", "Ogar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OagrCommon.WPF.ExtentionToolkits", "OagrCommon.WPF.ExtentionToolkits\OagrCommon.WPF.ExtentionToolkits.csproj", "{32625E62-6545-4631-85E1-C223D964FB5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgarCommon.WPF.LokTarMarkup", "OgarCommon.WPF.LokTarMarkup\OgarCommon.WPF.LokTarMarkup.csproj", "{39171122-200D-426C-BFFB-3462E60106BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{32625E62-6545-4631-85E1-C223D964FB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32625E62-6545-4631-85E1-C223D964FB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32625E62-6545-4631-85E1-C223D964FB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39171122-200D-426C-BFFB-3462E60106BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39171122-200D-426C-BFFB-3462E60106BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39171122-200D-426C-BFFB-3462E60106BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39171122-200D-426C-BFFB-3462E60106BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
