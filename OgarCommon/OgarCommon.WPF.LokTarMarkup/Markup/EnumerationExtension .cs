@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Markup;
 
-namespace OagrCommon.WPF.LokTarMarkup
+namespace OgarCommon.WPF.LokTarMarkup
 {
     public class EnumerationExtension : MarkupExtension
     {
