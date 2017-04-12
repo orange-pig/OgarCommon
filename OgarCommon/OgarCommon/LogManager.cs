@@ -20,6 +20,11 @@ namespace OgarCommon
             logger.Error(obj);
         }
 
+        public static void Error(string message)
+        {
+            logger.Error(message);
+        }
+
         /// <summary>
         /// 添加异常错误日志
         /// </summary>
@@ -48,6 +53,11 @@ namespace OgarCommon
             logger.Info(obj);
         }
 
+        public static void Info(string message)
+        {
+            logger.Info(message);
+        }
+
         /// <summary>
         /// 添加调试日志
         /// </summary>
@@ -55,6 +65,11 @@ namespace OgarCommon
         public static void Debug(object obj)
         {
             logger.Debug(obj);
+        }
+
+        public static void Debug(string message)
+        {
+            logger.Debug(message);
         }
 
         /// <summary>
@@ -77,6 +92,11 @@ namespace OgarCommon
             logger.Fatal(obj);
         }
 
+        public static void Fatal(string message)
+        {
+            logger.Fatal(message);
+        }
+
         /// <summary>
         /// 添加异常致命错误日志
         /// </summary>
@@ -97,6 +117,11 @@ namespace OgarCommon
             logger.Warn(obj);
         }
 
+        public static void Warn(string message)
+        {
+            logger.Warn(message);
+        }
+
         /// <summary>
         /// 添加异常警告日志
         /// </summary>
@@ -115,6 +140,11 @@ namespace OgarCommon
         public static void Trace(object obj)
         {
             logger.Trace(obj);
+        }
+
+        public static void Trace(string message)
+        {
+            logger.Trace(message);
         }
 
         /// <summary>

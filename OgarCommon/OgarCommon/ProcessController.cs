@@ -22,11 +22,17 @@ namespace OgarCommon
             Process current = Process.GetCurrentProcess();
 
             Process[] process = Process.GetProcessesByName(current.ProcessName);
-            foreach(var item in process)
+            foreach (var item in process)
             {
-                if(item.Id != current.Id)
+                if (item.Id != current.Id)
                 {
-                    if(Assembly.GetExecutingAssembly().Location.Replace("/","\\")
+                    if(item.MainModule.FileName == current.MainModule.FileName)
+                    {
+                        return item;
+                    }
+
+                    // Next code do work on you include this class in you application project.
+                    if (Assembly.GetExecutingAssembly().Location.Replace("/", "\\")
                         == current.MainModule.FileName)
                     {
                         return item;
