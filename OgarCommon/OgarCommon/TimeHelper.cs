@@ -186,7 +186,7 @@ namespace OgarCommon
         /// </summary>
         /// <param name="d">毫秒级Unix时间戳</param>
         /// <returns>DateTime</returns>
-        public static DateTime ConvertUnixTimeStampToDateTime(long d)
+        public static DateTime ConvertUnixTimeStampToDateTime(this long d)
         {
             DateTime time = DateTime.MinValue;
             DateTime startTime = new DateTime(1970, 1, 1, 0, 0, 0);
@@ -200,7 +200,7 @@ namespace OgarCommon
         /// </summary>
         /// <param name="time">时间</param>
         /// <returns>long</returns>
-        public static long ConvertDateTimeToUnixTimeStamp(DateTime time)
+        public static long ConvertDateTimeToUnixTimeStamp(this DateTime time)
         {
             DateTime startTime = new DateTime(1970, 1, 1, 0, 0, 0);
             long t = (long)(time - startTime).TotalSeconds;
@@ -213,7 +213,7 @@ namespace OgarCommon
         /// </summary>
         /// <param name="d">毫秒级Unix时间戳</param>
         /// <returns>DateTime</returns>
-        public static DateTime ConvertMillisecondsUnixTimeStampToDateTime(long d)
+        public static DateTime ConvertMillisecondsUnixTimeStampToDateTime(this long d)
         {
             DateTime time = DateTime.MinValue;
             DateTime startTime = new DateTime(1970, 1, 1);
@@ -227,7 +227,7 @@ namespace OgarCommon
         /// </summary>
         /// <param name="time">时间</param>
         /// <returns>long</returns>
-        public static long ConvertDateTimeToMillisecondsUnixTimeStamp(DateTime time)
+        public static long ConvertDateTimeToMillisecondsUnixTimeStamp(this DateTime time)
         {
             DateTime startTime = new DateTime(1970, 1, 1, 0, 0, 0, 0);
             DateTime endTime = TimeZone.CurrentTimeZone.ToUniversalTime(time);
