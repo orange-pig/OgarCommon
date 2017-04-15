@@ -325,7 +325,7 @@ namespace OgarCommon
                     bmp.Freeze();
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 bmp = null;
             }

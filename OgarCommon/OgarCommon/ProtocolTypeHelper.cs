@@ -107,7 +107,7 @@ namespace OgarCommon
             {
                 ret = TypeAndName[type];
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 ret = "Unkown";
             }
