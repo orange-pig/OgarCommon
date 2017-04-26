@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OgarCommon
 {
-    static class NetHelper
+    public static class NetHelper
     {
         public static bool CheckPortAvailable(int port)
         {

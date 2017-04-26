@@ -25,6 +25,5 @@ namespace OgarCommon.Win32Api
         /// <returns></returns>
         [DllImport("user32.dll")]
         public static extern int LoadBitmapW(int hInstance, ulong Reserved);
-
     }
 }
