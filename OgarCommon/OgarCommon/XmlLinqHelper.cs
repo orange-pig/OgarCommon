@@ -15,6 +15,7 @@ namespace OgarCommon
     {
         /// <summary>
         /// 加载一个XML文件
+        /// 在xml文件不存在时初始一个
         /// </summary>
         /// <param name="fileName"></param>
         /// 
