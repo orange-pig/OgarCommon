@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Markup;
+using OgarCommon.WPF.LokTarMarkup.Extension;
 
 namespace OgarCommon.WPF.LokTarMarkup
 {
@@ -56,28 +57,6 @@ namespace OgarCommon.WPF.LokTarMarkup
             return members;
         }
 
-        public string GetDescription(Enum value)
-        {
-            Type enumType = value.GetType();
-            // 获取枚举常数名称。
-            string name = Enum.GetName(enumType, value);
-            if (name != null)
-            {
-                // 获取枚举字段。
-                FieldInfo fieldInfo = enumType.GetField(name);
-                if (fieldInfo != null)
-                {
-                    // 获取描述的属性。
-                    DescriptionAttribute attr = Attribute.GetCustomAttribute(fieldInfo,
-                        typeof(DescriptionAttribute), false) as DescriptionAttribute;
-                    if (attr != null)
-                    {
-                        return attr.Description;
-                    }
-                }
-            }
-            return null;
-        }
 
         public IEnumerable<EnumerationMember> GetAllValuesAndDescriptions(Type t)
         {
@@ -91,7 +70,7 @@ namespace OgarCommon.WPF.LokTarMarkup
               select new EnumerationMember
               {
                   Value = enumValue,
-                  Description = GetDescription(enumValue)
+                  Description = enumValue.GetDescription()
               }).ToList();
         }
     }

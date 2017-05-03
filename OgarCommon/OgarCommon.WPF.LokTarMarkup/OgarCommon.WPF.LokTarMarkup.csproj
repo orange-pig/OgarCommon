@@ -45,8 +45,15 @@
   <ItemGroup>
     <Compile Include="Behavior\FocusBehavior.cs" />
     <Compile Include="Converters\EnumToBooleanConverter.cs" />
+    <Compile Include="Converters\EnumToDescriptionStringConverter.cs" />
+    <Compile Include="Converters\LongBytesToFormatStringConverter.cs" />
+    <Compile Include="Converters\IntSecondToFormatStringConverter.cs" />
+    <Compile Include="Extension\EnumExtension.cs" />
     <Compile Include="Markup\EnumerationExtension .cs" />
     <Compile Include="Markup\EnumToBooleanConverterExtension.cs" />
+    <Compile Include="Markup\EnumToDescriptionStringConverterExtension.cs" />
+    <Compile Include="Markup\IntSecondToFormatStringConverterExtension.cs" />
+    <Compile Include="Markup\LongBytesToFormatStringConverterExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
