@@ -13,7 +13,7 @@ namespace OgarCommon.WPF.LokTarMarkup
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value == null ? "" : ((Enum)value).GetDescription();
+            return value == null || !(value is Enum) ? "" : ((Enum)value).GetDescription();
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
