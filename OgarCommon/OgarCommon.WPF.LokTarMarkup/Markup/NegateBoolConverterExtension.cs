@@ -7,11 +7,11 @@ using System.Windows.Markup;
 
 namespace OgarCommon.WPF.LokTarMarkup
 {
-    public class NegateConverterExtension : MarkupExtension
+    public class NegateBoolConverterExtension : MarkupExtension
     {
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
-            return new NegateConverter();
+            return new NegateBoolConverter();
         }
     }
 }
