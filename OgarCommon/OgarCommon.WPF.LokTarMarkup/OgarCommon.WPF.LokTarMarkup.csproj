@@ -44,6 +44,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavior\CloseWindowBehavior .cs" />
     <Compile Include="Behavior\DataGridRowReadOnlyBehavior .cs" />
     <Compile Include="Behavior\FocusBehavior.cs" />
     <Compile Include="Behavior\ReadOnlyService.cs" />
