@@ -53,6 +53,7 @@
     <Compile Include="Converters\LongBytesToFormatStringConverter.cs" />
     <Compile Include="Converters\IntSecondToFormatStringConverter.cs" />
     <Compile Include="Converters\NegateBoolConverter.cs" />
+    <Compile Include="Converters\NumberUnitFormatConvertor.cs" />
     <Compile Include="Extension\EnumExtension.cs" />
     <Compile Include="Markup\EnumerationExtension .cs" />
     <Compile Include="Markup\EnumToBooleanConverterExtension.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Markup\IntSecondToFormatStringConverterExtension.cs" />
     <Compile Include="Markup\LongBytesToFormatStringConverterExtension.cs" />
     <Compile Include="Markup\NegateBoolConverterExtension.cs" />
+    <Compile Include="Markup\NumberUnitFormatConvertorExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
