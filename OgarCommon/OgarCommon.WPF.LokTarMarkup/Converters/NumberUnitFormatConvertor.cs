@@ -70,36 +70,36 @@ namespace OgarCommon.WPF.LokTarMarkup
             var devimalDigit = 0;
             var unit = Unit;
 
-            if (value < 1e3)
+            if (value < 1e3 && value > -1e3)
             {
                 displayValue = value;
                 devimalDigit = 0;
             }
-            else if (value < 1e6)
+            else if (value < 1e6 && value > -1e6)
             {
                 displayValue = value / 1e3;
                 devimalDigit = 3;
                 unit = "K" + Unit;
             }
-            else if (value < 1e9)
+            else if (value < 1e9 && value > -1e9)
             {
                 displayValue = value / 1e6;
                 devimalDigit = 6;
                 unit = "M" + Unit;
             }
-            else if (value < 1e12)
+            else if (value < 1e12 && value > -1e12)
             {
                 displayValue = value / 1e9;
                 devimalDigit = 6;
                 unit = "G" + Unit;
             }
-            else if (value < 1e15)
+            else if (value < 1e15 && value > -1e15)
             {
                 displayValue = value / 1e12;
                 devimalDigit = 6;
                 unit = "T" + Unit;
             }
-            else if (value < 1e18)
+            else if (value < 1e18 && value > -1e18)
             {
                 displayValue = value / 1e15;
                 devimalDigit = 6;
@@ -109,7 +109,15 @@ namespace OgarCommon.WPF.LokTarMarkup
             {
                 displayValue = 1e18;// 用旧值重新覆盖
             }
-            return string.Format("{0:F" + devimalDigit + "} {1}", displayValue, unit);
+
+            if (string.IsNullOrWhiteSpace(Unit))
+            {
+                return string.Format("{0:F" + devimalDigit + "}", displayValue);
+            }
+            else
+            {
+                return string.Format("{0:F" + devimalDigit + "} {1}", displayValue, unit);
+            }
         }
 
         private double UnFormatUnitNumber(string unitStaring)
