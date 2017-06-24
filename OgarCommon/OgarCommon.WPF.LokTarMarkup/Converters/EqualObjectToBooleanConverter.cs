@@ -8,20 +8,20 @@ using System.Windows.Data;
 
 namespace OgarCommon.WPF.LokTarMarkup
 {
-    public class EnumToBooleanConverter : IValueConverter
+    public class EqualObjectToBooleanConverter : IValueConverter
     {
         private bool _isReversed;
 
         public bool IsReversed { get { return _isReversed; } set { _isReversed = value; } }
 
 
-        public EnumToBooleanConverter()
+        public EqualObjectToBooleanConverter()
             : this(false)
         {
 
         }
 
-        public EnumToBooleanConverter(bool isReversed)
+        public EqualObjectToBooleanConverter(bool isReversed)
         {
             _isReversed = isReversed;
         }
@@ -29,12 +29,12 @@ namespace OgarCommon.WPF.LokTarMarkup
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value == null && parameter == null ? false : value.Equals(parameter) ^ _isReversed;
+            return value.Equals(parameter) ^ _isReversed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value != null && value.Equals(true) ^ _isReversed ? parameter : Binding.DoNothing;
+            return Binding.DoNothing;
         }
     }
 }

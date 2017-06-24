@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OgarCommon
 {
-    class IniFile
+    public class IniFile
     {
         public string path;
 
