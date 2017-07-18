@@ -10,7 +10,7 @@ namespace OgarCommon.WPF.LokTarMarkup
 {
     public class NumberUnitFormatConvertor : IValueConverter
     {
-        private static Dictionary<string, ulong> orders = new Dictionary<string, ulong>() {
+        private Dictionary<string, ulong> orders = new Dictionary<string, ulong>() {
             { "K", 1000 }, { "M", 1000000 }, { "G", 1000000000 } , { "T", 1000000000000 } , { "P", 1000000000000000 }  };
 
         private string _unit;

@@ -18,6 +18,15 @@ namespace OgarCommon.WPF.LokTarMarkup
             set { _unit = value; }
         }
 
+        public NumberUnitFormatConvertorExtension()
+        {
+        }
+
+        public NumberUnitFormatConvertorExtension(string unit)
+        {
+            this.Unit = unit;
+        }
+
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
             return new NumberUnitFormatConvertor(_unit);
