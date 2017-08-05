@@ -29,7 +29,7 @@ namespace OgarCommon.WPF.LokTarMarkup
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value.Equals(parameter) ^ _isReversed;
+            return (value == parameter || value.Equals(parameter)) ^ _isReversed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
