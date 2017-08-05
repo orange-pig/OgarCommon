@@ -51,6 +51,7 @@
     <Compile Include="Converters\EnumToBooleanConverter.cs" />
     <Compile Include="Converters\EnumToDescriptionStringConverter.cs" />
     <Compile Include="Converters\EqualObjectToBooleanConverter.cs" />
+    <Compile Include="Converters\FrequencyUnitFormatConverter.cs" />
     <Compile Include="Converters\LongBytesToFormatStringConverter.cs" />
     <Compile Include="Converters\IntSecondToFormatStringConverter.cs" />
     <Compile Include="Converters\NegateBoolConverter.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Markup\EnumToBooleanConverterExtension.cs" />
     <Compile Include="Markup\EnumToDescriptionStringConverterExtension.cs" />
     <Compile Include="Markup\EqualObjectToBooleanConverterExtension.cs" />
+    <Compile Include="Markup\FrequencyUnitFormatConverterExtension.cs" />
     <Compile Include="Markup\IntSecondToFormatStringConverterExtension.cs" />
     <Compile Include="Markup\LongBytesToFormatStringConverterExtension.cs" />
     <Compile Include="Markup\NegateBoolConverterExtension.cs" />
