@@ -19,6 +19,7 @@ namespace OgarCommon.WPF.LokTarMarkup
         public class EnumerationMember
         {
             public string Description { get; set; }
+            public object Enumerator { get; set; }
             public object Value { get; set; }
         }
 
@@ -65,13 +66,15 @@ namespace OgarCommon.WPF.LokTarMarkup
 
             var enumValues = Enum.GetValues(t).Cast<Enum>();
 
-            return (
+            var s= (
               from Enum enumValue in enumValues
               select new EnumerationMember
               {
-                  Value = enumValue,
+                  Value = Convert.ChangeType(enumValue, enumValue.GetTypeCode()),
+                  Enumerator = enumValue,
                   Description = enumValue.GetDescription()
               }).ToList();
+            return s;
         }
     }
 }
