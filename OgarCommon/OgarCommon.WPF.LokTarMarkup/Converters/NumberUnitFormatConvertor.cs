@@ -17,6 +17,9 @@ namespace OgarCommon.WPF.LokTarMarkup
 
         public string Unit { get { return _unit; } set { _unit = value; } }
 
+        public int DecimalDigit { get; set; }
+
+        public bool HasIntervalBeforeUnit { get; set; }
 
         public NumberUnitFormatConvertor()
             : this("")
@@ -25,6 +28,9 @@ namespace OgarCommon.WPF.LokTarMarkup
 
         public NumberUnitFormatConvertor(string unit)
         {
+            DecimalDigit = 6;
+            HasIntervalBeforeUnit = true;
+
             _unit = unit;
 
             var length = _unit.Length;
@@ -110,13 +116,25 @@ namespace OgarCommon.WPF.LokTarMarkup
                 displayValue = 1e18;// 用旧值重新覆盖
             }
 
-            if (string.IsNullOrWhiteSpace(Unit))
+            if (devimalDigit > DecimalDigit)
+            {
+                devimalDigit = DecimalDigit;
+            }
+
+            if (string.IsNullOrWhiteSpace(unit))
             {
                 return string.Format("{0:F" + devimalDigit + "}", displayValue);
             }
             else
             {
-                return string.Format("{0:F" + devimalDigit + "} {1}", displayValue, unit);
+                if (HasIntervalBeforeUnit)
+                {
+                    return string.Format("{0:F" + devimalDigit + "} {1}", displayValue, unit);
+                }
+                else
+                {
+                    return string.Format("{0:F" + devimalDigit + "}{1}", displayValue, unit);
+                }
             }
         }
 
