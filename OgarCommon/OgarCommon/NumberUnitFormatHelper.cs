@@ -8,7 +8,15 @@ namespace OgarCommon
 {
     public static class NumberUnitFormatHelper
     {
-        public static string Format(double number, int maxAfterPoint, string unit)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="number">The number need format </param>
+        /// <param name="maxAfterPoint">The precision digits</param>
+        /// <param name="unit">Need custome unit string</param>
+        /// <param name="HasIntervalBeforeUnit">Has whitespace before unit, other means the interval between in number and Unit</param>
+        /// <returns></returns>
+        public static string Format(double number, int maxAfterPoint, string unit, bool HasIntervalBeforeUnit = true)
         {
             var displayValue = 0d;
             var devimalDigit = 0;
@@ -59,7 +67,14 @@ namespace OgarCommon
             }
             else
             {
-                return string.Format("{0:F" + devimalDigit + "} {1}", displayValue, unit);
+                if (HasIntervalBeforeUnit)
+                {
+                    return string.Format("{0:F" + devimalDigit + "} {1}", displayValue, unit);
+                }
+                else
+                {
+                    return string.Format("{0:F" + devimalDigit + "}{1}", displayValue, unit);
+                }
             }
         }
     }
