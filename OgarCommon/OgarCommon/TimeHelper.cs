@@ -182,7 +182,7 @@ namespace OgarCommon
 
         /// <summary>
         /// 将秒级Unix时间戳转换为DateTime类型时间
-        /// 默认使用本地时间
+        /// 默认使用世界协调时
         /// </summary>
         /// <param name="d">毫秒级Unix时间戳</param>
         /// <returns>DateTime</returns>
@@ -196,14 +196,44 @@ namespace OgarCommon
 
         /// <summary>
         /// 将c# DateTime时间格式转换为秒级Unix时间戳格式
-        /// 默认使用本地时间
+        /// 默认使用世界协调时
         /// </summary>
         /// <param name="time">时间</param>
         /// <returns>long</returns>
         public static long ConvertDateTimeToUnixTimeStamp(this DateTime time)
         {
             DateTime startTime = new DateTime(1970, 1, 1, 0, 0, 0);
+
             long t = (long)(time - startTime).TotalSeconds;
+            return t;
+        }
+
+        /// <summary>
+        /// 将秒级Unix时间戳转换为DateTime类型时间
+        /// 默认使用本地时间
+        /// </summary>
+        /// <param name="d">毫秒级Unix时间戳</param>
+        /// <returns>DateTime</returns>
+        public static DateTime ConvertUnixTimeStampToLocalDateTime(this long d)
+        {
+            DateTime time = DateTime.MinValue;
+            DateTime startTime = new DateTime(1970, 1, 1, 0, 0, 0);
+            time = TimeZone.CurrentTimeZone.ToLocalTime(startTime.AddSeconds(d));
+            return time;
+        }
+
+        /// <summary>
+        /// 将c# DateTime时间格式转换为秒级Unix时间戳格式
+        /// 默认使用本地时间
+        /// </summary>
+        /// <param name="time">时间</param>
+        /// <returns>long</returns>
+        public static long ConvertLocalDateTimeToUnixTimeStamp(this DateTime time)
+        {
+            DateTime startTime = new DateTime(1970, 1, 1, 0, 0, 0);
+            DateTime endTime = TimeZone.CurrentTimeZone.ToUniversalTime(time);
+
+            long t = (long)(endTime - startTime).TotalSeconds;
             return t;
         }
 
