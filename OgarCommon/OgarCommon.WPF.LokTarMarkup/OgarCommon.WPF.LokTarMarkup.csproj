@@ -45,7 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Behavior\CloseWindowBehavior .cs" />
+    <Compile Include="Behavior\CommandBehavior.cs" />
+    <Compile Include="Behavior\CommandBehaviorBinding.cs" />
     <Compile Include="Behavior\DataGridRowReadOnlyBehavior .cs" />
+    <Compile Include="Behavior\EventHandlerGenerator.cs" />
     <Compile Include="Behavior\FocusBehavior.cs" />
     <Compile Include="Behavior\ReadOnlyService.cs" />
     <Compile Include="Converters\EnumToBooleanConverter.cs" />
