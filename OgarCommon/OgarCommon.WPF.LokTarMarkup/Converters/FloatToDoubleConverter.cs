@@ -17,7 +17,7 @@ namespace OgarCommon.WPF.LokTarMarkup
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return (float)value;
+            return (float)(double)value;
         }
     }
 }
