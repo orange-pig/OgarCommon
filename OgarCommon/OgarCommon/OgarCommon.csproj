@@ -51,6 +51,7 @@
     <Compile Include="DeviceSetupDiHelper.cs" />
     <Compile Include="EnumHelper.cs" />
     <Compile Include="ExceptionThrower.cs" />
+    <Compile Include="ExplorerHelper.cs" />
     <Compile Include="GuidHelper.cs" />
     <Compile Include="ImageHelper.cs" />
     <Compile Include="IniFile.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Win32Api\CfgMgr32.cs" />
     <Compile Include="Win32Api\kernel32.cs" />
     <Compile Include="Win32Api\SetupApi.cs" />
+    <Compile Include="Win32Api\Shell32.cs" />
     <Compile Include="Win32Api\User32.cs" />
     <Compile Include="WindowsVersionHelper.cs" />
     <Compile Include="XmlHelper.cs" />
