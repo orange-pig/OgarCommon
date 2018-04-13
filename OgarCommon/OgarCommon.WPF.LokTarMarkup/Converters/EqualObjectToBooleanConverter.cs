@@ -34,7 +34,7 @@ namespace OgarCommon.WPF.LokTarMarkup
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return Binding.DoNothing;
+            return value != null && value.Equals(true) ^ _isReversed ? parameter : Binding.DoNothing;
         }
     }
 }
