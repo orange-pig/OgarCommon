@@ -8,6 +8,9 @@ using System.Windows.Data;
 
 namespace OgarCommon.WPF.LokTarMarkup
 {
+    /// <summary>
+    /// Float converter to double easy to loses precision
+    /// </summary>
     public class FloatToDoubleConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
