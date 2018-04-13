@@ -51,6 +51,7 @@
     <Compile Include="Behavior\EventHandlerGenerator.cs" />
     <Compile Include="Behavior\FocusBehavior.cs" />
     <Compile Include="Behavior\ReadOnlyService.cs" />
+    <Compile Include="Converters\DoubleToStringConverter.cs" />
     <Compile Include="Converters\EnumToBooleanConverter.cs" />
     <Compile Include="Converters\EnumToDescriptionStringConverter.cs" />
     <Compile Include="Converters\EqualObjectToBooleanConverter.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Converters\NegateBoolConverter.cs" />
     <Compile Include="Converters\NumberUnitFormatConvertor.cs" />
     <Compile Include="Extension\EnumExtension.cs" />
+    <Compile Include="Markup\DoubleToStringConverterExtension.cs" />
     <Compile Include="Markup\EnumerationExtension .cs" />
     <Compile Include="Markup\EnumToBooleanConverterExtension.cs" />
     <Compile Include="Markup\EnumToDescriptionStringConverterExtension.cs" />
