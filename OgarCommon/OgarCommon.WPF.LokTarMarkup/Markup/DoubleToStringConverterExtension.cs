@@ -14,7 +14,7 @@ namespace OgarCommon.WPF.LokTarMarkup
         [ConstructorArgument("isReversed")]
         public bool IsReversed
         {
-            get { return _isReversed; }o
+            get { return _isReversed; }
             set { _isReversed = value; }
         }
 
