@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://www.github.com</licenseUrl>
+    <projectUrl>https://github.com/orange-pig/OgarCommon</projectUrl>
+    <iconUrl>http://www.haotu.net/up/1181/256/horde.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Release Info.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>Commons Utils Helpers</tags>
+  </metadata>
+</package>
