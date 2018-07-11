@@ -89,6 +89,7 @@
     <Compile Include="SevenZipHelper.cs" />
     <Compile Include="ThreadHelper.cs" />
     <Compile Include="TimeHelper.cs" />
+    <Compile Include="TypeHelper.cs" />
     <Compile Include="VersionHelper.cs" />
     <Compile Include="Win32Api\AdvApi32.cs" />
     <Compile Include="Win32Api\CfgMgr32.cs" />
