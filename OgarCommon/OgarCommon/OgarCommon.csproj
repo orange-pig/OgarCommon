@@ -53,9 +53,6 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NLog">
-      <HintPath>..\..\depends\OgarCommon\4.5_64\NLog.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -75,7 +72,6 @@
     <Compile Include="ImageHelper.cs" />
     <Compile Include="IniFile.cs" />
     <Compile Include="IPAddressHelper.cs" />
-    <Compile Include="LogManager.cs" />
     <Compile Include="MACAddressHelper.cs" />
     <Compile Include="MatchHelper.cs" />
     <Compile Include="Message.cs" />
@@ -100,11 +96,6 @@
     <Compile Include="WindowsVersionHelper.cs" />
     <Compile Include="XmlHelper.cs" />
     <Compile Include="XmlLinqHelper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="NLog.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
