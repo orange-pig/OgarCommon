@@ -74,6 +74,7 @@
     <Compile Include="IPAddressHelper.cs" />
     <Compile Include="MACAddressHelper.cs" />
     <Compile Include="MatchHelper.cs" />
+    <Compile Include="MathHelper.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="NetHelper.cs" />
     <Compile Include="NumberUnitFormatHelper.cs" />
