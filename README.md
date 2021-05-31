@@ -1,7 +1,7 @@
 # OgarCommon
 Lok'tar Ogar! A Common easy to use, beacuse Mother Earth in the flick with you.
 
-# Project Description
+## project description
 
 |namespace|Description|
 |-|-|
@@ -13,3 +13,10 @@ Lok'tar Ogar! A Common easy to use, beacuse Mother Earth in the flick with you.
 |OgarCommon.Device.UsbCamera|General UsbCamera access library|
 |OgarCommon.WPF.ExtenstionToolkits| **Has been removed** |
 |OgarCommon.WPF.LokTarMarkup| Moved in to new project [Alauda](https://github.com/orange-pig/Alauda)|
+
+## install
+
+Install via [NuGet](https://www.nuget.org/packages/OgarCommon/):
+```
+Install-Package OgarCommon
+```
